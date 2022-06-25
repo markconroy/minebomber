@@ -1,0 +1,48 @@
+:root {
+  --background-colour: antiquewhite;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-colour);
+}
+
+.header {
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+.targets {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, auto); 
+  width: 100%;
+  gap: 1rem;
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.targets__item {
+  height: 2rem;
+}
+
+.targets__button {
+  width: 100%;
+  font-size: 2rem;
+  border: 0;
+  transition: 1s;
+  background-color: var(--background-colour);
+}
+
+.targets__button--hit {
+  opacity: 0;
+}
